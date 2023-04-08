@@ -77,11 +77,11 @@ body {
 }
 
 .header-conrainer {
-  display: flex;
-  align-items: center;
+
 }
 .header-nav {
-  margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo-link {
@@ -362,7 +362,7 @@ body {
   /* or 150% */
   letter-spacing: 0.02em;
   color: var(--cloud);
-  width: 264px;
+  max-width: 264px;
 }
 
 /* =================== */
