@@ -13,6 +13,8 @@
   --grey: #2e2f42;
   --white: #ffffff;
   --dairy: #fcfcfc;
+
+  
 }
 
 /* Reset start */
@@ -70,6 +72,8 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+
 /* Header styles */
 
 .header {
@@ -77,11 +81,13 @@ body {
 }
 
 .header-conrainer {
-
+  display: flex;
+  align-items: center;
 }
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .header-logo-link {
@@ -349,7 +355,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
 
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-logo-span {
