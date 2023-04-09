@@ -53,14 +53,16 @@ button {
 /* Reset end */
 
 /* Card set */
+/*
 .card-set {
   display: flex;
   align-items: center;
   gap: var(--indent);
 }
 .card-set-item {
-  width: calc((100% - ((var(--items) -1) * var(--indent))) / var(--items));
+  width: calc((100% - ((var(--items) -1) * var(--indent))) / var(--items)); 
 }
+*/
 
 body {
   font-family: var(--frimary-font);
@@ -229,11 +231,14 @@ body {
 }
 
 .about-list {
+  display: flex;
+  gap: var(--indent);
   align-items: flex-start;
-  --items: 4;
 }
 
 .about-item {
+  --items: 4;
+  width: calc((100% - var(--indent) * 3) / 4);
 }
 
 .about-item-header {
@@ -274,10 +279,14 @@ body {
 }
 
 .portfolio-list {
-  --items: 3;
+  display: flex;
+  align-items: center;
+  gap: var(--indent);
 }
 
 .portfolio-item {
+  --items: 3;
+  width: calc((100% - var(--indent) * 2) / 3);
 }
 
 .portfolio-img {
@@ -306,6 +315,9 @@ body {
 }
 
 .team-list {
+  display: flex;
+  align-items: center;
+  gap: var(--indent);
 }
 
 .team-item {
@@ -314,6 +326,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 
   --items: 4;
+  width: calc((100% - var(--indent) * 3) / 4);
 }
 
 .team-img {
