@@ -14,8 +14,8 @@
   --white: #ffffff;
   --dairy: #fcfcfc;
  
-  --indent-portfolio-list: 24px;
-  --indent-team-list: 24px;
+  --indent: 24px;
+  --items: 3;
 }
 
 /* Reset start */
@@ -51,6 +51,16 @@ button {
 }
 
 /* Reset end */
+
+/* Card set */
+.card-set {
+  display: flex;
+  align-items: center;
+  gap: var(--indent);
+}
+.card-set-item {
+  width: calc((100% - (var(--indent) * var(--items) -1 )) / var(--items));
+}
 
 body {
   font-family: var(--frimary-font);
@@ -221,7 +231,7 @@ body {
 .about-list {
   display: flex;
   align-items: center;
-  gap: var(--indent-about-list);
+  gap: 24px;
 }
 
 .about-item {
@@ -265,13 +275,11 @@ body {
 }
 
 .portfolio-list {
-  display: flex;
-  align-items: center;
-  gap: var(--indent-portfolio-list);
+
 }
 
 .portfolio-item {
-  width: calc((100% - (var(--indent-portfolio-list) * 2)) / 3);
+  
 }
 
 .portfolio-img {
@@ -300,9 +308,7 @@ body {
 }
 
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent-team-list);
+
 }
 
 .team-item {
@@ -311,7 +317,7 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
-  width: calc((100% - (var(--indent-team-list) * 3)) / 4);
+  --item: 4;
 }
 
 .team-img {
@@ -361,7 +367,7 @@ body {
   /* identical to box height, or 117% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--iris);
 
   display: inline-block;
   margin-bottom: 16px;
