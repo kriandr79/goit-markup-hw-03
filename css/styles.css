@@ -13,7 +13,7 @@
   --grey: #2e2f42;
   --white: #ffffff;
   --dairy: #fcfcfc;
- 
+
   --indent: 24px;
   --items: 3;
 }
@@ -59,7 +59,7 @@ button {
   gap: var(--indent);
 }
 .card-set-item {
-  width: calc((100% - (var(--indent) * var(--items) -1 )) / var(--items));
+  width: calc((100% - (var(--indent) * var(--items) -1)) / var(--items));
 }
 
 body {
@@ -229,9 +229,7 @@ body {
 }
 
 .about-list {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+  --item: 4;
 }
 
 .about-item {
@@ -275,11 +273,9 @@ body {
 }
 
 .portfolio-list {
-
 }
 
 .portfolio-item {
-  
 }
 
 .portfolio-img {
@@ -308,15 +304,16 @@ body {
 }
 
 .team-list {
-
 }
-
-.team-item {
-  background: var(--white);
+.team-item-card {
+   background: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
+}
+.team-item {
+ 
   --item: 4;
 }
 
