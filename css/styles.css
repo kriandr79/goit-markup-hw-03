@@ -59,7 +59,7 @@ button {
   gap: var(--indent);
 }
 .card-set-item {
-  width: calc((100% - (var(--indent) * (var(--items) -1))) / var(--items));
+  width: calc((100% - ((var(--items) -1) * var(--indent))) / var(--items));
 }
 
 body {
