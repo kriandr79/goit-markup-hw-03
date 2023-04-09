@@ -229,7 +229,8 @@ body {
 }
 
 .about-list {
-  --item: 4;
+  align-items: flex-start;
+  --items: 4;
 }
 
 .about-item {
@@ -273,6 +274,7 @@ body {
 }
 
 .portfolio-list {
+  --items: 3;
 }
 
 .portfolio-item {
@@ -305,16 +307,14 @@ body {
 
 .team-list {
 }
-.team-item-card {
-   background: var(--white);
+
+.team-item {
+  background: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-
-}
-.team-item {
- 
-  --item: 4;
+  
+  --items: 4;
 }
 
 .team-img {
