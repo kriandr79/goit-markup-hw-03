@@ -407,11 +407,9 @@ body {
 .portfolio-filters {
 }
 
-.portfolio-filters-wrapper {
-  padding-bottom: 75px;
-}
 
 .portfolio-filters-list {
+  padding-bottom: 75px;
   display: flex;
   justify-content: center;
   gap: var(--indent);
@@ -455,11 +453,11 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--indent);
+  row-gap: 48px;
 }
 
 .portfolio-works-item {
   background-color: var(--white);
-  border: 1px solid var(--cornflower);
 
   width: calc((100% - var(--indent) * 2) / 3);
 }
@@ -469,6 +467,7 @@ body {
 
 .portfolio-works-title-wrapper {
   padding: 32px 16px;
+  border: 1px solid var(--cornflower);
 }
 
 .portfolio-works-img {
@@ -483,6 +482,8 @@ body {
   /* identical to box height, or 120% */
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+
+  margin-bottom: 8px;
 }
 .portfolio-works-text {
   font-weight: 400;
