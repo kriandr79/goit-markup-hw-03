@@ -327,9 +327,9 @@ body {
 
 .team-item-card {
   background: var(--white);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-
 }
 
 .team-img {
@@ -407,7 +407,14 @@ body {
 .portfolio-filters {
 }
 
+.portfolio-filters-wrapper {
+  padding-bottom: 75px;
+}
+
 .portfolio-filters-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--indent);
 }
 
 .portfolio-filters-item {
@@ -427,6 +434,8 @@ body {
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   cursor: pointer;
+
+  padding: 12px 24px;
 }
 
 .portfolio-filters-btn:hover,
@@ -437,19 +446,35 @@ body {
 
 /* Portfolio works styles */
 .portfolio-works {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio-works-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--indent);
 }
 
 .portfolio-works-item {
   background-color: var(--white);
+  border: 1px solid var(--cornflower);
+
+  width: calc((100% - var(--indent) * 2) / 3);
 }
 
 .portfolio-works-item-link {
 }
 
+.portfolio-works-title-wrapper {
+  padding: 32px 16px;
+}
+
 .portfolio-works-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .portfolio-works-header {
   font-weight: 500;
