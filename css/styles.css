@@ -50,6 +50,8 @@ button {
   cursor: pointer;
 }
 
+
+
 /* Reset end */
 
 /* Card set */
@@ -68,6 +70,19 @@ body {
   font-family: var(--frimary-font);
   background-color: var(--white);
   color: var(--slate);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -178,9 +193,7 @@ body {
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
 }
 
 .hero-title {
@@ -195,6 +208,8 @@ body {
   display: block;
   max-width: 496px;
   margin-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-btn {
@@ -216,6 +231,8 @@ body {
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
